@@ -21,6 +21,7 @@ import {
   Briefcase,
   User
 } from 'lucide-react';
+import profileImg from './assets/profile.jpg';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -192,7 +193,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-8">
             <img
-              src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=300"
+                  src={profileImg}
               alt="Habtamu Shiferaw Adugna"
               className="w-32 h-32 rounded-full mx-auto mb-8 object-cover border-4 border-white shadow-lg"
             />
@@ -243,29 +244,53 @@ function App() {
             </div>
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-6">My Journey</h3>
-              <h4>Assistant Lecturer</h4>
-              <h4>Wachemo University</h4>
-              <h4>2015 – 2020</h4>
-              <p className="text-gray-600 mb-6 leading-relaxed">
-              Delivered lectures and facilitated learning in foundational computer science courses.Assisted in curriculum development and academic advising.Conducted tutorials, laboratory sessions, and assessments.Engaged in research and community service activities.
-              </p>
-              <p className="text-gray-600 mb-6 leading-relaxed">
-              Lecturer and General Manager
-              Wachemo University and Bluehub Technology PLC
-              2022 – Present
-              Teach advanced undergraduate and postgraduate courses in Computer Science.Supervise student research projects and theses.Develop and update course materials to reflect the latest advancements.Conduct independent research and contribute to academic publications.Actively participate in departmental and institutional development activities.
-              </p>
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                I'm Habtamu Shiferaw Adugna, a passionate full-stack developer with a strong foundation in 
-                computer science and extensive experience in web and mobile application development. I specialize 
-                in creating scalable, user-friendly applications using modern technologies.
-              </p>
-              <p className="text-gray-600 mb-8 leading-relaxed">
-                My expertise spans across frontend frameworks like React and Vue.js, backend technologies 
-                including Node.js and Python, and mobile development with React Native. I'm committed to 
-                continuous learning and staying updated with the latest industry trends and best practices.
-              </p>
-              
+              <h4 className="font-semibold text-lg">Habtamu Shiferaw Adugna</h4>
+  <h4 className="text-gray-700 mb-2">Lecturer | Full-Stack Developer | General Manager, Bluehub Technology PLC</h4>
+  <p className="text-gray-600 mb-6 leading-relaxed">
+    I am a passionate full-stack developer and computer science educator with a strong academic and practical 
+    background in software development, web technologies, and mobile applications. My journey combines higher 
+    education teaching, research, and entrepreneurial leadership.
+  </p>
+
+  <h4 className="font-semibold text-lg">Assistant Lecturer</h4>
+  <h4 className="text-gray-700">Wachemo University</h4>
+  <h4 className="text-gray-500 mb-2">2015 – 2020</h4>
+  <p className="text-gray-600 mb-6 leading-relaxed">
+    Delivered foundational computer science lectures and supported student learning. Assisted in curriculum 
+    development and academic advising. Conducted tutorials, lab sessions, and assessments. Participated in 
+    research initiatives and community engagement programs.
+  </p>
+
+  <h4 className="font-semibold text-lg">Lecturer & General Manager</h4>
+  <h4 className="text-gray-700">Wachemo University & Bluehub Technology PLC</h4>
+  <h4 className="text-gray-500 mb-2">2022 – Present</h4>
+  <p className="text-gray-600 mb-6 leading-relaxed">
+    Teach advanced undergraduate and postgraduate courses in computer science. Supervise student research 
+    projects and postgraduate theses. Continuously update course materials in line with the latest 
+    technological advancements. Lead independent research and contribute to peer-reviewed publications. 
+    Guide the strategic development of Bluehub Technology PLC, fostering innovation and youth tech education.
+  </p>
+
+  <h4 className="font-semibold text-lg">Full-Stack Developer</h4>
+  <p className="text-gray-600 mb-6 leading-relaxed">
+    I specialize in building scalable, user-centered web and mobile applications using modern technologies:
+  </p>
+  <ul className="list-disc list-inside text-gray-600 mb-6 leading-relaxed">
+  <li>
+    <span className="font-semibold">Frontend:</span> React.js, Vue.js
+  </li>
+  <li>
+    <span className="font-semibold">Backend:</span> Node.js, Python
+  </li>
+  <li>
+    <span className="font-semibold">Mobile:</span> React Native
+  </li>
+</ul>
+ 
+  <p className="text-gray-600 mb-8 leading-relaxed">
+    Driven by a commitment to excellence, I stay up to date with emerging technologies, apply best development 
+    practices, and continuously seek innovative solutions.
+  </p>
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center p-4 bg-blue-50 rounded-lg">
                   <div className="text-3xl font-bold text-blue-600 mb-2">25+</div>
@@ -581,10 +606,10 @@ function App() {
             <div className="text-2xl font-bold mb-4">Habtamu Shiferaw Adugna</div>
             <p className="text-gray-400 mb-6">Building digital solutions that make a difference</p>
             <div className="flex justify-center space-x-6">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://github.com/habte27" className="text-gray-400 hover:text-white transition-colors">
                 <Github size={24} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="www.linkedin.com/in/habtamu-shiferaw-048400130" className="text-gray-400 hover:text-white transition-colors">
                 <Linkedin size={24} />
               </a>
               <a href="mailto:habteshiferaw27@gmail.com" className="text-gray-400 hover:text-white transition-colors">
